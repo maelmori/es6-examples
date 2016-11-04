@@ -16,7 +16,3 @@ class Shape {
     this.id = id
   }
 }
-
-// Also, class definition body are executed in strict mode
-// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode
-// Take care about variable definitions and eval executions
