@@ -5,18 +5,19 @@
 class Shape {
   constructor (id) {
     this.id = id
-    let a = 1
+    let number = 3
+    numbwr = 4
     // 'with' expression not longer allowed
-    with(a) {
+    with(number) {
       // Exception!!!!
       console.log(a)
     }
-    // octals with this syntax are not longer alowwed in strict mode
+    // octals with this syntax are not longer alowed in strict mode
     let b = 015 + 18
     console.log(b)
     // If you specifically want to use octal numbers, this is the right notation:
     let a = 0o15;
-    // avoid deletion of unqualified identifiers (as simple variable names)
+    // avoid deletion of unqualified identifiers (simple variable names)
     delete a
   }
 }

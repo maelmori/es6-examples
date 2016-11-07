@@ -1,7 +1,6 @@
-// https://davidwalsh.name/es6-generators
 // Iterating elements
 
-function * talking_bout_my_generation () {
+function * idGenerator () {
   let index = 0
   while (index < 3) {
     yield index++
@@ -10,6 +9,6 @@ function * talking_bout_my_generation () {
   return index++
 }
 
-for (let element of talking_bout_my_generation()) {
+for (let element of idGenerator()) {
   console.log(element)
 }

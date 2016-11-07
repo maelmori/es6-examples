@@ -1,13 +1,12 @@
-// https://davidwalsh.name/es6-generators
-// Iterating elements
+// Iterating elements in a for of loop
 
-function * talking_bout_my_generation () {
+function * idGenerator () {
   let index = 0
   while (index < 3) {
     yield index++
   }
 }
 
-for (let element of talking_bout_my_generation()) {
+for (let element of idGenerator()) {
   console.log(element)
 }

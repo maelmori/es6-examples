@@ -1,4 +1,3 @@
-// https://davidwalsh.name/es6-generators
 // sending messages in a bididreccional way
 
 function * talking_bout_my_generation (x) {

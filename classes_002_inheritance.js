@@ -17,6 +17,7 @@ class Shape {
 
 class Rectangle extends Shape {
   constructor (id, x, y, width, height) {
+    // You need to call "super" here.
     super(id, x, y)
     this.width = width
     this.height = height
@@ -28,6 +29,7 @@ class Rectangle extends Shape {
 
 class Circle extends Shape {
   constructor (id, x, y, radius) {
+    // You need to call "super" here.
     super(id, x, y)
     this.radius = radius
   }

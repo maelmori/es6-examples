@@ -1,14 +1,18 @@
-// https://davidwalsh.name/es6-generators
-// parameters
+// while true madness under control
 
-function * talking_bout_my_generation () {
+function * idGenerator () {
+  let index = 0
+  // ANATHEMA!!!!
   while (true) {
-    let value = yield null
-    console.log(value)
+    yield index++
   }
 }
 
-let gen = talking_bout_my_generation()
-gen.next(1)
-gen.next(2)
-gen.next(3)
+const gen = idGenerator()
+
+const element1 = {id: gen.next().value}
+const element2 = {id: gen.next().value}
+const element3 = {id: gen.next().value}
+
+const my_elements = [element1, element2, element3]
+console.log(my_elements)

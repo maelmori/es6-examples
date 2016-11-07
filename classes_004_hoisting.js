@@ -9,8 +9,7 @@ function test () {
 
 // Class declarations are not!
 new Shape(1)
-
-// ReferenceError!!
+// Badabooooom!!
 class Shape {
   constructor (id) {
     this.id = id
