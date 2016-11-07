@@ -2,9 +2,9 @@ const name = 'juanillo'
 
 const order = {
   quantity: 5,
-  price_per_unit: 4.5,
+  pricePerUnit: 4.5,
   product: 'cervezas ',
-  product_trademark: 'Paulaner'
+  productTrademark: 'Paulaner'
 }
 
 var user = {name: 'Felipe Perez', level: 5}
@@ -18,17 +18,17 @@ console.log('hola ' + name)
 
 // ES6
 console.log(`${name} tomará ${order.quantity}
-  ${order.product + order.product_trademark} `)
+  ${order.product + order.productTrademark} `)
 // ES5
 console.log(name + ' tomará ' + order.quantity + '\n\
-  ' + order.product + order.product_trademark);
+  ' + order.product + order.productTrademark);
 
 // Expression interpolation
 // ES6
-console.log(`Y deberá ${order.quantity * order.price_per_unit} pavos.`)
+console.log(`Y deberá ${order.quantity * order.pricePerUnit} pavos.`)
 
 // ES5
-console.log('Y deberá ' + (order.quantity * order.price_per_unit) + ' pavos.')
+console.log('Y deberá ' + (order.quantity * order.pricePerUnit) + ' pavos.')
 
 // Functions and complex interpolation
 console.log(`Bienvenido al sistema, ${user.name.toUpperCase()}.`)

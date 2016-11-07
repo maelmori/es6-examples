@@ -3,10 +3,10 @@
 
 const iterableStuff = {
   elements: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
-  current_element: 0,
+  currentElement: 0,
   [Symbol.iterator]: function * () {
-    while (this.current_element < this.elements.length) {
-      yield this.elements[this.current_element ++]
+    while (this.currentElement < this.elements.length) {
+      yield this.elements[this.currentElement ++]
     }
   }
 }

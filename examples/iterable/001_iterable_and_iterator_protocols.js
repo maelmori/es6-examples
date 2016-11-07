@@ -5,6 +5,7 @@
 // accesible though a member with the key Symbol.iterator
 
 const a = [1, 2, 3, 4]
+// @@iterator method
 console.log(typeof a[Symbol.iterator])
 // So, you can do
 for (let value of a) {
