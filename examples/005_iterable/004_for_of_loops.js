@@ -1,5 +1,5 @@
 // We've seen this before, but I want to stop just a minute here.
-// Why not to use for... in
+// Why not to use the old fashioned for... in loop?
 const test = [1, 2, 3, 4, 5, 6]
 for (let i in test) {
   // Issue #1: i is a string, not an integer. There are no 0, 1, 2 or 3 values
@@ -21,7 +21,7 @@ test.forEach(function (element) {
   // But here we can't use break or return statements.
   if (element === 2) {
     // Error!!
-    //break
+    break
     // Useless!!
     return
   }

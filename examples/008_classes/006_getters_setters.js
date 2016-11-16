@@ -8,11 +8,22 @@ class Shape {
     this.height = height
   }
 
-  // Still failing setters
-    // set id () { return false}
+  set doubleSize (double) {
+    this.width = this.width * 2
+    this.height = this.height * 2
+  }
+
+  // Be VERY careful with something like this
+  // set id (id) {
+  //   this.id = id
+  // }
+  // Circular callings in the air ♩♩♩ dubi dubi du...
+
   get area () {
     return this.width * this.height
   }
 }
 const s = new Shape(1, 10, 5)
+console.log(s.area)
+s.doubleSize = true
 console.log(s.area)
