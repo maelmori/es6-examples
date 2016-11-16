@@ -6,6 +6,10 @@ They will be used in a tech talk in the Bluetab offices at Madrid, Spain.
 
 Feel free to use them in your own courses or talks.
 
+All these examples had been tested in Atom using Node6, following this guide:
+
+https://om12net.wordpress.com/2015/06/23/painless-es6-workflow-with-atom/ 
+
 Any feedback is welcome.
 
 ## Subjects covered
