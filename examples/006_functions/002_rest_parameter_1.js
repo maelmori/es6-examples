@@ -1,5 +1,6 @@
 // AVOID using arguments object
 // is an optimitation killer and it's use is strongly discouraged
+// Also, it doesn't exist in arrow functions
 // https://github.com/petkaantonov/bluebird/wiki/Optimization-killers#3-managing-arguments
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/arguments
 

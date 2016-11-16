@@ -5,7 +5,7 @@ class IterableStuff {
     this.elements = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
     this.currentElement = 0
   }
-
+  // http://es6-features.org/#ComputedPropertyNames
   [Symbol.iterator] () {
     // Use of closures
     let currentElement = this.currentElement

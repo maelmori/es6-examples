@@ -28,6 +28,9 @@ const sumMultiline = (a, b) => {
 console.log(sumMultiline(1, 2))
 
 // Use in map o filter
+// Map, filter and reduce existed since 2009 ES5
+// But now they look better, powered with arrow functions
+
 const applicants = [
   {
     name: 'Margaret',

@@ -1,4 +1,4 @@
-// Passing more than uno argument
+// Passing more than one argument
 
 // ES5
 function myES5Concat () {
