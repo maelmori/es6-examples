@@ -6,11 +6,20 @@ class Shape {
     this.id = id
     this.width = width
     this.height = height
+    this.__doubleSized = false
   }
 
-  set doubleSize (double) {
-    this.width = this.width * 2
-    this.height = this.height * 2
+  set doubleSize (doubleSize) {
+    if (doubleSize && !this.__doubleSized) {
+      this.width = this.width * 2
+      this.height = this.height * 2
+      this.__doubleSized = true
+    }
+    if (!doubleSize && this.__doubleSized) {
+      this.width = this.width / 2
+      this.height = this.height / 2
+      this.__doubleSized = false
+    }
   }
 
   // Be VERY careful with something like this
@@ -26,4 +35,8 @@ class Shape {
 const s = new Shape(1, 10, 5)
 console.log(s.area)
 s.doubleSize = true
+console.log(s.area)
+s.doubleSize = true
+console.log(s.area)
+s.doubleSize = false
 console.log(s.area)
