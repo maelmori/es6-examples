@@ -17,7 +17,7 @@ class Shape {
   // set id (id) {
   //   this.id = id
   // }
-  // Circular callings in the air ♩♩♩ dubi dubi du...
+  // Circular callings in the air ♩♩♩ dubi dubi du ♫ ♫...
 
   get area () {
     return this.width * this.height
