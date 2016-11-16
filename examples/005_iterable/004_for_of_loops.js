@@ -10,7 +10,7 @@ for (let i in test) {
   // Issue #2: if somewhere else you modify your array methods via array.Prototype
   // the new methods will apear as elements of the array.
 
-  // Issue #3: In some circunstances, this code can look in arbitrary order!
+  // Issue #3: In some circunstances, this code can iterate in arbitrary order!
 
   console.log(test[i])
 }
