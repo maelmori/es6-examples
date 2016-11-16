@@ -21,7 +21,7 @@ Any feedback is welcome.
 7. Proxies
 8. Promises
 
-## Resources:
+## Main external resources:
 * http://es6-features.org/
 * https://developer.mozilla.org/en-US/docs/Web/JavaScript
 * https://hacks.mozilla.org/category/es6-in-depth/
