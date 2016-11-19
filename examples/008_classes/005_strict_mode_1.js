@@ -6,8 +6,8 @@
 
 function myTest () {
   var myVar = 10
-  my_var = 11;
-  return my_var;
+  my_var = 11
+  return my_var
 }
 console.log(myTest())
 console.log(my_var)
