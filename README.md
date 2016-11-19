@@ -8,9 +8,10 @@ Feel free to use them in your own courses or talks.
 
 All these examples had been tested in Atom using Node6, following this guide:
 
-https://om12net.wordpress.com/2015/06/23/painless-es6-workflow-with-atom/ 
+https://om12net.wordpress.com/2015/06/23/painless-es6-workflow-with-atom/
 
 Any feedback is welcome.
+maelmori -at- gmail -dot- com
 
 ## Subjects covered
 
@@ -19,11 +20,10 @@ Any feedback is welcome.
 3. String interpolation
 4. Generators
 5. Iterables
-4. Functions
-5. Maps / Sets
-6. Class syntax
-7. Proxies
-8. Promises
+6. Functions
+7. Maps / Sets
+8. Class syntax
+9. Proxies
 
 ## Main external resources:
 * http://es6-features.org/
