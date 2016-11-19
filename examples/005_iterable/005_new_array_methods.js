@@ -43,6 +43,7 @@ console.log([6, -5, 8].findIndex(x => x < 0))
 console.log([6, , , -5, 8].findIndex(x => x < 0))
 
 // "in" operator
-console.log(2 in ['uno', 2, new Date()])
+// Careful, it's about keys, not values!
+console.log(2 in ['uno', 1, new Date()])
 console.log('property' in {property: 'value'})
 console.log('toString' in {})

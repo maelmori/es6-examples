@@ -11,7 +11,7 @@ console.log(mySymbol)
 console.log(myFancyDate.mySymbol) // FAIL
 // You can check if the property is there
 if (mySymbol in myFancyDate) {
-  console.log('and it is')
+  console.log(mySymbol.toString() + ' and it is')
 }
 // As symbols were designed to avoid collisions, there are ignored by
 // introspection features as Object.keys(obj) and Object.getOwnPropertyNames(obj)
