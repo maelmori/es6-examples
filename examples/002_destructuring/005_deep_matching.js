@@ -1,19 +1,24 @@
-const myComplexObject = {
-  leaf_1: 1,
-  branch_1: {
-    leaf_1: 1,
-    leaf_2: 2,
-    branch_1: {
-      leaf_1:1,
-      leaf_2:2
-    }
+const myCircle = {
+  geo: {
+    position: {x: 1, y: 100},
+    radius: 50
   },
-  branch_2: {
-    leaf_1:1,
-    leaf_2:2
-  }
+  colour: {red: 100, blue: 5, green: 14}
 }
 
-const { leaf_1: l1, branch_1: { leaf_1: l11, leaf_2:l12, branch_1: {leaf_1:l111, leaf_2:l112} }, branch_2: {leaf_1:l21, leaf_2:l22} }  = myComplexObject
+const {
+  geo: {
+    position: {x: circleXPosition, y: circleYPposition},
+    radius: circleRadius
+  },
+  colour: {red: circleRed, blue: circleBlue, green: circleGreen}
+} = myCircle
 
-console.log(l11, l112)
+console.log(
+  circleXPosition,
+  circleYPposition,
+  circleRadius,
+  circleRed,
+  circleBlue,
+  circleGreen
+)
