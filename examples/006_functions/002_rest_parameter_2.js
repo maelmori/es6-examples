@@ -14,8 +14,8 @@ console.log(myES5Concat(' ', 'Talking', 'bout', 'my', 'generation'))
 // ES6
 function myES6concat (separator, ...chunks) {
   let result = ''
-  for (let i = 0; i < chunks.length; i++) {
-    result += chunks[i] + separator
+  for (let value of chunks) {
+    result += value + separator
   }
   return result
 }
