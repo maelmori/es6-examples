@@ -4,11 +4,11 @@ const test = [1, 2, 3, 4, 5, 6]
 for (let i in test) {
   // Issue #1: i is a string, not an integer. There are no 0, 1, 2 or 3 values
   // for i, but "0", "1", "2" and so on. So if you're going to calculate
-  // to find if you're next to the endo of the array, i < test.length
+  // to find if you're next to the end of the array, i < test.length
   // can give you unexpected results
 
-  // Issue #2: if somewhere else you modify your array methods via array.Prototype
-  // the new methods will apear as elements of the array.
+  // Issue #2: if somewhere else you modify your array methods via Array.Prototype
+  // the new methods will appear as elements of the array.
 
   // Issue #3: In some circunstances, this code can iterate in arbitrary order!
 
