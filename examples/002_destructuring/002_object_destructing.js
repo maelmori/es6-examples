@@ -1,13 +1,11 @@
-const object = {lifeAndUniverseAndEverything: 42, isAnswer: true}
-const {lifeAndUniverseAndEverything, isAnswer} = object
+const circle = {radius: 42, x: 1, y: 10}
+const {radius, x, y} = circle
 
-console.log(lifeAndUniverseAndEverything) // 42
-console.log(isAnswer) // true
+console.log(radius, x, y)
 
 // New variable names for the properties
 
-const {lifeAndUniverseAndEverything: douglas, isAnswer: adams} = object
-console.log(douglas) // 42
-console.log(adams) // true
+const {radius: circleRadius, x: circleX, y: circleY} = circle
+console.log(circleRadius, circleX, circleY)
 
 // https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Operadores/Destructuring_assignment

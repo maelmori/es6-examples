@@ -22,7 +22,7 @@ console.log(`${name} tomará ${order.quantity}
   ${order.product + order.productTrademark} `)
 // ES5
 console.log(name + ' tomará ' + order.quantity + '\n\
-  ' + order.product + order.productTrademark);
+  ' + order.product + order.productTrademark)
 
 // Expression interpolation
 // ES6
