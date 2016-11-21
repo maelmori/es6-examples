@@ -7,5 +7,6 @@ myConst = 11 // EPIC FAIL
 myConst ++ // You're fucking nuts??!!
 myConst += 5 // You better go home, kiddo!
 
-const otherConst = {myProperty:10}
-otherConst.myProperty = 11 // Wait, What???
+const myBirthday = new Date(1974, 11, 11)
+myBirthday.setDate(20) // Wait, what???
+console.log(myBirthday) // !!??
