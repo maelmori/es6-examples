@@ -32,7 +32,7 @@ console.log(testArray)
 
 // Array.keys, values & entries
 console.log(Array.from([ 'a', 'b' ].keys()))
-// console.log(Array.from([ 'a', 'b' ].values()))
+//console.log(Array.from([ 'a', 'b' ].values()))
 console.log(Array.from([ 'a', 'b' ].entries()))
 
 // Array.find()
