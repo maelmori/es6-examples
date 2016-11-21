@@ -6,7 +6,8 @@ class Rectangle {
     if (Rectangle.idAutoincrement === undefined) {
       Rectangle.idAutoincrement = 1
     }
-    // Later on, we'll see about generators
+    // We tipically will do this with generators
+    // But works as an example
     this.id = Rectangle.idAutoincrement ++
     this.width = width
     this.height = height
