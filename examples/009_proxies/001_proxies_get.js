@@ -10,19 +10,16 @@ const myConnection = {
 var handler = {
   get (target, key, receiver) {
     if (key === 'password') {
-      console.log("Stop nosing around!!")
+      console.log('Stop nosing around!!')
       return null
     } else {
-      return Reflect.get(target, key, receiver);
+      return Reflect.get(target, key, receiver)
     }
-  },
+  }
 }
 
 const myProxyfiedConnection = new Proxy(myConnection, handler)
 
 for (let i in myProxyfiedConnection) {
-  console.log(i + " = " + myProxyfiedConnection[i])
-}
-if (myProxyfiedConnection.hasOwnProperty('user')) {
-  console.log("Now you see me")
+  console.log(i + ' = ' + myProxyfiedConnection[i])
 }
