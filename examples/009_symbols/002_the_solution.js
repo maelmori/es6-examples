@@ -2,16 +2,21 @@
 const myFancyDate = new Date(2016, 11, 11)
 
 // You can create a new property
-const mySymbol = Symbol('isMyBirthday')
-myFancyDate[mySymbol] = true  // guaranteed not to collide
+const myBirthdaySymbol = Symbol('isMyBirthday')
+myFancyDate[myBirthdaySymbol] = true  // guaranteed not to collide
+
+if (myFancyDate[myBirthdaySymbol]) {
+  console.log('hooray hooray oh happy day!!')
+}
 
 // 'isMyBirthday' is a description, used to log
-console.log(mySymbol)
+console.log(myBirthdaySymbol)
 // You can't access it via dot notation
-console.log(myFancyDate.mySymbol) // FAIL
+console.log(myFancyDate.myBirthdaySymbol) // undefined as big as a castle
 // You can check if the property is there
-if (mySymbol in myFancyDate) {
-  console.log(mySymbol.toString() + ' and it is')
+if (myBirthdaySymbol in myFancyDate) {
+  console.log(myBirthdaySymbol.toString() + ' and it is')
+  console.log(myBirthdaySymbol + ' this will fail, so be careful and remember the toString()')
 }
 // As symbols were designed to avoid collisions, there are ignored by
 // introspection features as Object.keys(obj) and Object.getOwnPropertyNames(obj)
