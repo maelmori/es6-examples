@@ -1,5 +1,5 @@
 // https://davidwalsh.name/es6-generators
-// Easies example
+// Easiest example
 
 function * talkingBoutMyGeneration () {
   yield 'Talking'
