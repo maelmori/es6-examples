@@ -4,8 +4,8 @@ function MyES5Class () {
   this.foo = 'Hello'
   jQuery('#BigRedButton').click(function () {
     // What is "this" here??
-    // I'll tell you: "this" is the window object
-    // You will create a global variable called foo unrelated to your object
+    // I'll tell you: "this" is the DOM object or the window object
+    // if you call it from a setTimeout or setInterval
     this.foo = 'Goodbye'
   })
   // Tipically, you will fix it with closures
