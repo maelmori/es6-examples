@@ -1,6 +1,6 @@
 // Works like map with a few restrictions:
 // 1.- Cannot use primitives as keys
-// 2.- Cannot use foor loops, foreach, no keys function...
+// 2.- Cannot use for loops, foreach, no keys function...
 const weakmap = new WeakMap()
 let value1 = {testing: true}
 weakmap.set(value1, 21)
