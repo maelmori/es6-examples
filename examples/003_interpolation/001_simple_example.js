@@ -7,7 +7,7 @@ const order = {
   productTrademark: 'Paulaner'
 }
 
-var user = {name: 'Felipe Perez', level: 5}
+const user = {name: 'Felipe Perez', level: 5}
 
 // Simple interpolation example
 // ES6
