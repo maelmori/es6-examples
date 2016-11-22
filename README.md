@@ -26,6 +26,8 @@ maelmori -at- gmail -dot- com
 9. Proxies
 
 ## Main external resources:
+
+* https://kangax.github.io/compat-table/es6/
 * http://es6-features.org/
 * https://developer.mozilla.org/en-US/docs/Web/JavaScript
 * https://hacks.mozilla.org/category/es6-in-depth/
